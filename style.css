@@ -2,6 +2,15 @@ body {
     /*to remove pre-brower margins on chrome*/
     margin:  auto 0;
 }
+
+/* to style nav bar items */
+nav>ul {
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 /* to style social media icons */
 .fa {
     height: 10px;
