@@ -1,0 +1,17 @@
+body {
+    /*to remove pre-brower margins on chrome*/
+    margin:  auto 0;
+}
+/* to style social media icons */
+.fa {
+    height: 10px;
+    width: 10px;
+    margin: 5%;
+    text-decoration: none;
+    color: black;
+}
+
+/* adds hover effect for social media icons */
+.fa:hover {
+    opacity: 0.7;
+}
