@@ -12,26 +12,28 @@
 </head>
 <body>
    <!-- creates nav bar items -->
-   <nav>
-       <ul>
-           <li><a>Home</a></li>
-           <li><a>About</a></li>
-           <li><a>Skills</a></li>
-           <li><a>Project</a></li>
-           <li><a>Contact</a></li>
-           <li><a>Resume</a></li>
-           <li><a href = "index.html">English</a></li>
-           <li><a>日本語</a></li>
-       </ul>
-   </nav>
-   <!-- creates div for Top section -->
+    <!-- creates nav bar items -->
+   <nav class = "topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="navlink icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+    <a class="navlink japanese" href="#Home">ホームページ</a>
+    <a class="navlink japanese" href="#About">私について</a>
+    <a class="navlink japanese" href="#Skills">スキル</a>
+    <a class="navlink japanese" href="#Projects">プロジェクト</a>
+    <a class="navlink japanese" href="#Contact">コンタクト</a>
+    <a class="navlink japanese" href="#Resume">履歴書</a> 
+    <a href="index.html" class="language">English</a>
+    <h4 class="selected language japanese">日本語</h4>
+</nav>  
+    <!-- creates div for Top section -->
    <div>
         <h1>アンダーソン　ルーク</h1>
-        <h2>Web Developer</h2>
+        <h2>ウェブデベロッパー</h2>
     </div>
     <!-- creates div for About Me section -->
     <div>
-       <h2>About me</h2>
+       <h2>私について</h2>
        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi suscipit laborum nesciunt doloribus at. Iusto aliquid veritatis pariatur exercitationem nulla, eligendi, harum tempore, nobis quae laudantium praesentium maxime. Repellendus?</p> 
     </div>
     <!-- creates div for Skills section -->
