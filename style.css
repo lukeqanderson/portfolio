@@ -3,58 +3,67 @@ body {
     margin:  auto 0;
 }
 
-nav {
+.topnav {
     background-color: #00ADB5;
     overflow: hidden;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except lanuage. 
 Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   .topnav .navlink {display: none;}
   .topnav a.icon {
-    float: right;
+    float: left;
     display: block;
   }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
+This class makes the topnav look good on small screens (display the links vertically instead of 
+horizontally) */
+@media screen and (max-width: 680px) {
   .topnav.responsive {position: relative;}
   .topnavnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 10;
+    margin: 0;
   }
   .topnav.responsive a {
     float: none;
     display: block;
     text-align: left;
+    margin: 0;
+    font-size: 14px;
   }
+}
+
+/* to remove margin from hamburger menu icon */
+i.fa.fa-bars {
+  margin:0;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
+  font-size: 4vw;
   display: none;
 }
 
 
 /* to style nav bar items */
 nav>a {
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: bold;
     float: left;
     display: block;
     text-align: center;
     padding: 14px 16px;
-    margin: 0;
     text-decoration: none;
 }
 
 /* to style selected language */
 .selected {
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: bold;
     float: left;
     display: block;
@@ -66,24 +75,45 @@ nav>a {
     color: white;
 }
 
-/* adjust language font*/
+/* adjust Japanese font*/
 .japanese {
-    font-size: 14.8px;
+    font-size: 1.555vw;
 }
 
+/* in order to orient language settings to the right for larger screens*/
+@media screen and (min-width: 680px) {
+  .language {
+    float:right;
+  }
+}
+
+/* to adjust font size for large screens */
+@media screen and (min-width: 1200px) {
+  .navlink {
+    font-size: 24px;
+  }
+  .japanese {
+    font-size: 18px;
+  }
+}
 
 /* for hover effect on nav items */
 nav>a:hover{
     opacity: 0.7;
 }
 
-nav>a:active{
-    color: black;
+/* to remove opacity from selected links */
+.selected:hover {
+  opacity: 1;
 }
 
-/* sets language settings to the right */
-.language {
-    float: right;
+/* to remove click effect from selected link */
+.selected:active {
+  color:white;
+}
+
+nav>a:active{
+    color: black;
 }
 
 /* to style social media icons */
