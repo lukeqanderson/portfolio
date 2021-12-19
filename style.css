@@ -32,6 +32,24 @@ Show the link that contains should open and close the topnav (.icon) */
   }
 }
 
+/* to style nav bar items */
+nav>a {
+  font-size: 23.2px;
+  font-weight: bold;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 16px 14px; 
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* adjust Japanese font*/
+.japanese {
+    font-size: 19.33px;
+    font-family: 'Outfit', sans-serif;
+}
+
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
 This class makes the topnav look good on small screens (display the links vertically instead of 
 horizontally) */
@@ -40,10 +58,15 @@ horizontally) */
     float: none;
     display: block;
     text-align: left;
-    font-size: 20px;
   }
   .topnavnav.responsive a.icon { 
     font-size: 26px;
+  }
+  nav>a {
+    font-size: 3vw;
+  }
+  .japanese {
+    font-size: 2.8vw;
   }
 }
 
@@ -59,50 +82,23 @@ i.fa.fa-bars {
 }
 
 
-/* to style nav bar items */
-nav>a {
-    font-size: 2vw;
-    font-weight: bold;
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
 /* to style selected language */
 .selected {
-    font-size: 2vw;
     font-weight: bold;
     float: left;
     display: block;
     text-align: center;
-    padding: 14px 16px;
-    margin: 0;
+
     text-decoration: none;
     background-color: #222831;
     color: white;
-}
-
-/* adjust Japanese font*/
-.japanese {
-    font-size: 1.5vw;
+    font-family: 'Outfit', sans-serif;
 }
 
 /* in order to orient language settings to the right for larger screens*/
 @media screen and (min-width: 1000px) {
   .language {
     float:right;
-  }
-}
-
-/* to adjust font size for large screens */
-@media screen and (min-width: 1200px) {
-  .navlink {
-    font-size: 23.2px;
-  }
-  .japanese {
-    font-size: 18px;
   }
 }
 
@@ -139,9 +135,7 @@ nav>a:active{
 
 /* to style social media icons */
 .fa {
-    height: 10px;
-    width: 10px;
-    padding-right: 10%;
+    padding-right: 20%;
     text-decoration: none;
     color: #222831;
 }
@@ -151,39 +145,97 @@ nav>a:active{
     color: #636569;
 }
 
-/* to change text color in document */
+/* to change text in document */
 .text {
   color: #222831;
+  font-family: 'Outfit', sans-serif;
 }
 
 p {
   color: #222831;
+  font-family: 'Outfit', sans-serif;
 }
 
 /* to adjust headshot image */
 #headshot {
   border-radius: 50%;
   border: 3px solid #222831;
-  height: auto;
-  width: 20%;
-  max-width: 300px;
-  min-width: 200px;
+}
+
+/* media queries to adjust home layout */
+@media screen and (max-width: 616.8px) {
+  .homediv {
+    margin-bottom: 20%;
+  }
+  #headshot {
+    margin-top: 20%;
+    height: 220px;
+    width: 220px;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 616.8px) and (max-width: 1000px) {
+  .homediv {
+    margin-right: 20%;
+    margin-left: 10%;
+  }
+  #headshot {
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 10%;
+    height: 275px;
+    width: 275px;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+  .homediv {
+    margin-right: 20%;
+    margin-left: 10%;
+  }
+  #headshot {
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 10%;
+    height: 350px;
+    width: 350px;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .homediv {
+    margin-right: 20%;
+    margin-left: 10%;
+  }
+  #headshot {
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 10%;
+    height: 450px;
+    width: 450px;
+    margin-bottom: 10%;
+  }
 }
 
 /* to adjust text div */
 .homediv {
   text-align: center;
+  font-size: 2.5vw;
 }
 
 /* to adjust the "home" section */
 .home {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 10%;
-  height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  height: 95vh;
 }
 
+/* to style footer */
 footer {
   display: grid;
   background-color: #00ADB5;
