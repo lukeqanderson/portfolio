@@ -12,7 +12,7 @@
 </head>
 <body>
    <!-- creates nav bar items -->
-   <nav class = "topnav" id="myTopnav">
+   <nav class = "topnav sticky" id="myTopnav">
         <a href="javascript:void(0);" class="navlink icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -26,10 +26,12 @@
         <a href="indexjp.html" class="navlink navitem notselected language japanese">日本語</a>
    </nav>
    <!-- creates div for Home section -->
-   <div class = "home text">
+    <div class = "home text">
         <img id = "headshot" src = "headshot.jpg">
-        <h1>Luke Anderson</h1>
-        <h2>Web Developer</h2>
+        <div class = "homediv">
+            <h1 class = nametext>Luke Anderson</h1>
+            <h2 class = roletext>Web Developer</h2>
+        </div>
     </div>
     <!-- creates div for About Me section -->
     <div class= "about text">
@@ -46,6 +48,7 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <li>Bootstrap</li>
         </ul>
         <ul>
             <li>
@@ -70,11 +73,13 @@
     <!-- div for Resume section -->
     <div></div>
     <!-- create Footer with social media links -->
-    <footer>
-        <!-- add fa social media icons with linnks-->
-        <a href="https://github.com/lukeqanderson#" class="fa fa-github fa-lg"></a>
-        <a href="https://www.linkedin.com/in/lukeqanderson/#" class="fa fa-linkedin fa-lg"></a>
+    <footer class = "stickybtm">
+        <!-- add fa social media icons with links-->
         <p>by Luke Anderson</p>
+        <div class =sociallinks>
+            <a href="https://github.com/lukeqanderson#" class="fa fa-github fa-lg"></a>
+            <a href="https://www.linkedin.com/in/lukeqanderson/#" class="fa fa-linkedin fa-lg"></a>
+        </div>
     </footer>
 </body>
 </html>
