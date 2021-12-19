@@ -16,27 +16,28 @@
         <a href="javascript:void(0);" class="navlink icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
-        <a class="navlink" href="#Home">Home</a>
-        <a class="navlink" href="#About">About</a>
-        <a class="navlink" href="#Skills">Skills</a>
-        <a class="navlink" href="#Projects">Projects</a>
-        <a class="navlink" href="#Contact">Contact</a>
-        <a class="navlink" href="#Resume">Resume</a> 
+        <a class="navlink navitem" href="#Home">Home</a>
+        <a class="navlink navitem" href="#About">About</a>
+        <a class="navlink navitem" href="#Skills">Skills</a>
+        <a class="navlink navitem" href="#Projects">Projects</a>
+        <a class="navlink navitem" href="#Contact">Contact</a>
+        <a class="navlink navitem" href="#Resume">Resume</a> 
         <a class="navlink selected language">English</a>
-        <a href="indexjp.html" class="navlink language japanese">日本語</a>
+        <a href="indexjp.html" class="navlink navitem notselected language japanese">日本語</a>
    </nav>
    <!-- creates div for Home section -->
-   <div>
+   <div class = "home text">
+        <img id = "headshot" src = "headshot.jpg">
         <h1>Luke Anderson</h1>
         <h2>Web Developer</h2>
     </div>
     <!-- creates div for About Me section -->
-    <div>
+    <div class= "about text">
        <h2>About me</h2>
        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident excepturi suscipit laborum nesciunt doloribus at. Iusto aliquid veritatis pariatur exercitationem nulla, eligendi, harum tempore, nobis quae laudantium praesentium maxime. Repellendus?</p> 
     </div>
     <!-- creates div for Skills section -->
-    <div>
+    <div class = "skills text">
         <h2>Skills</h2>
         <ul>
             <li>
