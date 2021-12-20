@@ -156,133 +156,58 @@ p {
   font-family: 'Outfit', sans-serif;
 }
 
+/* to adjust the "home" section */
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr; */
+}
+
+.spacer {
+  height: 15vh;
+  width: 100%;
+}
+
+
 /* to adjust headshot image */
 #headshot {
+  height: 30vmin;
+  width: 30vmin;
   border-radius: 50%;
   border: 3px solid #222831;
-}
-
-/* media queries to adjust home layout */
-@media screen and (max-width: 616.8px) {
-  .homediv {
-    margin-bottom: 20%;
-  }
-  #headshot {
-    margin-top: 20%;
-    height: 220px;
-    width: 220px;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 616.8px) and (max-width: 1000px) {
-  .homediv {
-    margin-right: 20%;
-    margin-left: 10%;
-  }
-  #headshot {
-    margin-top: 15%;
-    margin-left: 20%;
-    margin-right: 10%;
-    height: 275px;
-    width: 275px;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1500px) {
-  .homediv {
-    margin-right: 20%;
-    margin-left: 10%;
-  }
-  #headshot {
-    margin-top: 15%;
-    margin-left: 20%;
-    margin-right: 10%;
-    height: 350px;
-    width: 350px;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 1500px) and (max-width: 2000px) {
-  .homediv {
-    margin-right: 20%;
-  }
-  #headshot {
-    margin-top: 15%;
-    margin-left: 10%;
-    height: 420px;
-    width: 420px;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 2000px) and (max-width: 2500px) {
-  .homediv {
-    margin-right: 20%;
-  }
-  #headshot {
-    margin-top: 15%;
-    margin-left: 10%;
-    height: 490px;
-    width: 490px;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 2500px) and (max-width: 3000px) {
-  .homediv {
-    margin-right: 20%;
-  }
-  #headshot {
-    margin-top: 15%;
-    margin-left: 10%;
-    height: 560px;
-    width: 560px;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 3000px) and (max-width: 3500px) {
-  .homediv {
-    margin-right: 20%;
-  }
-  #headshot {
-    margin-top: 15%;
-    margin-left: 10%;
-    height: 630px;
-    width: 630px;
-    margin-bottom: 10%;
-  }
-}
-
-@media screen and (min-width: 3500px) {
-  .homediv {
-    margin-right: 20%;
-  }
-  #headshot {
-    margin-top: 15%;
-    margin-left: 10%;
-    height: 700px;
-    width: 700px;
-    margin-bottom: 10%;
-  }
 }
 
 /* to adjust text div */
 .homediv {
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 3vmin;
 }
 
-/* to adjust the "home" section */
-.home {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* to adjust height of about section */
+.about {
+  height: 100vh;
   align-items: center;
-  height: 95vh;
+}
+
+.aboutHeading {
+  font-size: 2.2rem;
+}
+
+.aboutDescription {
+  font-size: 1.5rem;
+}
+
+.skills {
+  display: grid;
+}
+
+.portfolio {
+  height: 100vw;
+  background-color: red;
 }
 
 /* to style footer */
