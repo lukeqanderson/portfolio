@@ -208,6 +208,7 @@ nav>a:active{
   padding-right: 10vw;
 }
 
+/* to adjust size for about fonts */
 .aboutHeading {
   font-size: 8vmin;
 }
@@ -216,9 +217,22 @@ nav>a:active{
   font-size: 4vmin;
 }
 
+/* to format skills section */
 .skills {
-  display: grid;
   height: 100vh;
+  width: 100vw;
+}
+
+/* to remove bullet points from skills lists */
+.skillsList {
+  list-style: none;
+}
+
+
+@media screen and (min-width: 800px) {
+.skillCategories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .portfolio {
