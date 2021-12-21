@@ -1,6 +1,5 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks 
-on the icon */
-function myFunction() {
+/* Adds responsive class to drop down navbar items */
+function navDropDown() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav sticky") {
     x.className += " responsive";
@@ -8,3 +7,14 @@ function myFunction() {
     x.className = "topnav sticky";
   }
 }
+
+/* Adds responsive class condense navbar after a selection is made*/
+function navUp() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav sticky responsive") {
+    x.className = "topnav sticky";
+  } else {
+    x.className = "topnav sticky responsive";
+  }
+}
+
