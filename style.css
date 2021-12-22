@@ -222,6 +222,7 @@ nav>a:active{
   background-color: #d2d3d6;
 }
 
+/* to format skill title */
 #skillsTitle {
   text-align: center;
   font-size: 8vmin;
@@ -236,17 +237,20 @@ nav>a:active{
   margin-left: 1vmin;
 }
 
+/* to set up grid */
+.skillCategories {
+  display: grid;
+}
+
 /* to remove bullet points from skills lists */
 .skillsList {
   list-style: none;
   padding-bottom: 10vh;
   border: 5px solid #222831;
   border-radius: 15%;
-  padding-right: 10%;
-  height: 25vmin;
   background-color: white;
-  font-size: 3vmin;
-  margin-right: 10%;
+  font-size: 4vmin;
+  margin: 0;
 }
 
 /* to adjust grid to large screens */
@@ -255,30 +259,37 @@ nav>a:active{
     height: 100vh;
   }
   .skillCategories {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    justify-items: center;
+    width: 64vw;
+    margin-right: 18vw;
+    margin-left: 18vw;
   }
   .skillsList {
     font-size: 2vmin;
-    width: 20vmin;
-    margin: 5vmin;
+    width: 15vw;
+    height: 17vh;
   }
 }
 
 /* to adjust grid to small screens */
 @media screen and (max-width: 1000px) {
-  .skills {
-    height: 160vh;
-  }
-  .skillCategories {
-    margin-left: 33%;
-    margin-right: 28%;
+  #skillsTitle {
+    padding: 10vh;
     margin-bottom: 0;
   }
+  .skills {
+    height: 180vh;
+  }
+  .skillCategories {
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100vw;
+    height: 140vh;
+  }
   .skillsList {
-    margin-bottom: 10%;
+    width: 40vw;
+    height: 30vh;
   }
 }
 
