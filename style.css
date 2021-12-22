@@ -174,7 +174,6 @@ nav>a:active{
   justify-items: center;
   align-items: center;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 1fr; */
 }
 
 .homespacer {
@@ -219,23 +218,73 @@ nav>a:active{
 
 /* to format skills section */
 .skills {
-  height: 100vh;
   width: 100vw;
+  background-color: #d2d3d6;
+}
+
+#skillsTitle {
+  text-align: center;
+  font-size: 8vmin;
+  padding-top: 15vh;
+  margin-top: 0;
+}
+
+/* to adjust the size of skills image */
+.skillsImage {
+  height: 4vmin;
+  width: 4vmin;
+  margin-left: 1vmin;
 }
 
 /* to remove bullet points from skills lists */
 .skillsList {
   list-style: none;
+  padding-bottom: 10vh;
+  border: 5px solid #222831;
+  border-radius: 15%;
+  padding-right: 10%;
+  height: 25vmin;
+  background-color: white;
+  font-size: 3vmin;
+  margin-right: 10%;
 }
 
-
-@media screen and (min-width: 800px) {
-.skillCategories {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+/* to adjust grid to large screens */
+@media screen and (min-width: 1000px) {
+  .skills {
+    height: 100vh;
+  }
+  .skillCategories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .skillsList {
+    font-size: 2vmin;
+    width: 20vmin;
+    margin: 5vmin;
+  }
 }
+
+/* to adjust grid to small screens */
+@media screen and (max-width: 1000px) {
+  .skills {
+    height: 160vh;
+  }
+  .skillCategories {
+    margin-left: 33%;
+    margin-right: 28%;
+    margin-bottom: 0;
+  }
+  .skillsList {
+    margin-bottom: 10%;
+  }
+}
+
 
 .portfolio {
+  margin-top: 0;
   height: 100vh;
   background-color: red;
 }
