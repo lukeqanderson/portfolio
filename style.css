@@ -22,7 +22,7 @@ body {
   width: 100%;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except lanuage. 
+/* When the screen is less than 1000 pixels wide, hide all links, except lanuage. 
 Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 1000px) {
   .topnav .navlink {display: none;}
@@ -39,7 +39,7 @@ nav>a {
   float: left;
   display: block;
   text-align: center;
-  padding: 16px 14px; 
+  padding: 1.4vmin 1.4vmin; 
   text-decoration: none;
   font-family: 'Outfit', sans-serif;
 }
@@ -54,9 +54,7 @@ nav>a {
   font-family: 'Outfit', sans-serif;
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. 
-This class makes the topnav look good on small screens (display the links vertically instead of 
-horizontally) */
+/* To make the topnav verticle */
 @media screen and (max-width: 1000px) {
   .topnav.responsive a {
     float: none;
@@ -67,10 +65,10 @@ horizontally) */
     font-size: 26px;
   }
   nav>a {
-    font-size: 3vw;
+    font-size: 3vmin;
   }
-  .japanese {
-    font-size: 2.8vw;
+  .language.japanese {
+    font-size: 2.7vmin;
   }
 }
 
@@ -293,22 +291,119 @@ nav>a:active{
   }
 }
 
-
-.portfolio {
-  margin-top: 0;
+/* sets background and size for projects section */
+.projects {
   height: 100vh;
-  background-color: red;
+  width: 100vw;
+  margin: 0;
+  background-color: #222831;
+}
+
+/* to format projects title */
+#projectsTitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 8vmin;
+  padding-top: 12vh;
+  padding-bottom: 1vh;
+}
+
+/* to format projects container*/
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 95vw;
+  height: 50vh;
+  margin-left: 2.5vw;
+  padding-bottom: 20vh;
+}
+
+
+/* to hide slides by default */
+.projectSlide {
+  display: none;
+}
+
+/* to make background white */
+.project-display {
+  background-color: white;
+  border-radius: 15%;
+  border: 5px solid #838587;
+  overflow: hidden;
+}
+
+/* to adjust text portion of project display */
+.project-text {
+  height: 16vh;
+  width: 36vw;
+  font-size: 3vmin;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.numbered-text {
+  font-size: 3vmin;
+  text-align: center;
+}
+
+/* fading animation for slides*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* to add formatting */
+.slideshow-button {
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 12vmin;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* to adjust hover color */
+.slideshow-button:hover {
+  color: #838587;
+}
+
+/* to adjust position for previous button */
+.prev {
+  left: 10vw;
+}
+
+/* to adjust size of project images */
+.project-image {
+  height: 30vh;
+  width: 40vw;
 }
 
 /* to style footer */
 footer {
+  /* to hide projects buttons */
   display: grid;
   background-color: #00ADB5;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 

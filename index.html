@@ -11,8 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='main.js'></script>
 </head>
 <body>
    <!-- creates nav bar items -->
@@ -81,14 +79,45 @@
                         <h3>Other <img class="skillsImage" src = "other.png"></h3>
                     </li>
                     <li>Management</li>
-                    <li>Security</li>
-                    <li>IT</li>
                 </ul>
             </div>
         </div>
     </div>
-    <!--div for sliding portfolio presentation  -->
-    <div class = "portfolio text"></div>
+    <!--div for sliding projects presentation  -->
+    <a name = "Projects"></a>
+    <div class = "projects text">
+        <h2 id = "projectsTitle" class = "text light">Projects</h2>
+        <div class = "projects-container">
+            <!-- previous button -->
+            <a class="prev slideshow-button" onclick="plusSlides(-1)">&#10094;</a>
+            <div class = "slideshow-container">
+                <!-- project 1 -->
+                <div class = "projectSlide fade">
+                    <div class = "project-display">
+                        <a href = "https://github.com/lukeqanderson"><img class = "project-image" src = "project1.jpg"></a>
+                        <div class = "project-text text dark">
+                            <div>A sample project make with examples that will be a project soon.</div>
+                            <div>Source code: <a class = "src-code-link" href = "https://github.com/lukeqanderson">github</a></div>
+                        </div>
+                    </div>
+                    <div class = "numbered-text text light">1 / 2</div>
+                </div>
+                <!-- project 2 -->
+                <div class = "projectSlide fade">
+                    <div class = "project-display">
+                        <a href = "https://github.com/lukeqanderson"><img class = "project-image" src = "project2.jpg"></a>
+                        <div class = "project-text text dark">
+                            <div>A sample project make with examples that will be a project soon.</div>
+                            <div>Source code: <a class = "src-code-link" href = "https://github.com/lukeqanderson">github</a></div>
+                        </div>
+                    </div>
+                    <div class = "numbered-text text light">2 / 2</div>
+                </div>
+            </div>
+            <!-- next button -->
+            <a class="next slideshow-button" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
      <!--div for Contact form  -->
     <div></div>
     <!-- div for Resume section -->
@@ -102,5 +131,7 @@
             <a href="https://www.linkedin.com/in/lukeqanderson/#" class="fa fa-linkedin fa-lg"></a>
         </div>
     </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='script.js'></script>
 </body>
 </html>
