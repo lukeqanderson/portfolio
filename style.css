@@ -305,14 +305,15 @@ nav>a:active{
   margin-bottom: 0;
   text-align: center;
   font-size: 8vmin;
-  padding-top: 12vh;
+  padding-top: 8%;
   padding-bottom: 1vh;
 }
+
 
 /* to format projects container*/
 .projects-container {
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 2fr 3fr 2fr;
   align-items: center;
   justify-items: center;
   width: 95vw;
@@ -385,9 +386,13 @@ nav>a:active{
   color: #838587;
 }
 
-/* to adjust position for previous button */
+/* to adjust position for previous and next buttons */
 .prev {
-  left: 10vw;
+  padding-left: 16vw;
+}
+
+.next {
+  padding-right: 16vw;
 }
 
 /* to adjust size of project images */
