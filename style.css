@@ -460,6 +460,11 @@ nav>a:active{
   padding-right: 2.1vmin;
 }
 
+/* to format email area */
+.email {
+  padding-right: 8.7vmin;
+}
+
 /* to format contact input area */
 .contact-box {
   font-size: 2.5vmin;
