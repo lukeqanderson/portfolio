@@ -43,7 +43,7 @@
     <div class= "about text light">
        <h2 class = "aboutHeading">About me</h2>
        <p class = "aboutDescription">I am a former restaurant manager turned developer with experience working 
-           with a diverse team in a fast-paced environment. I graduated with a bachelors degree in Computer Science and Accounting 
+           with a diverse team in a fast-paced environment. I will graduate with a bachelors degree in Computer Science and Accounting 
            from Eastern Oregon University in the Spring of 2023. I strive to develop applications 
            with a user focus, clean design, and intuitive functionality. When away from my computer, my hobbies include
          running, cycling and fishing. </p> 
@@ -84,8 +84,8 @@
         </div>
     </div>
     <!--div for sliding projects presentation  -->
-    <a name = "Projects"></a>
     <div class = "projects text">
+        <a name = "Projects"></a>
         <h2 id = "projectsTitle" class = "text light">Projects</h2>
         <div class = "projects-container">
             <!-- previous button -->
@@ -96,8 +96,8 @@
                     <div class = "project-display">
                         <a href = "https://github.com/lukeqanderson"><img class = "project-image" src = "project1.jpg"></a>
                         <div class = "project-text text dark">
-                            <div>A sample project make with examples that will be a project soon.</div>
-                            <div>Source code: <a class = "src-code-link" href = "https://github.com/lukeqanderson">github</a></div>
+                            <div>A sample project made with examples that will be a project soon.</div>
+                            <div>Source code: <a class = "src-code-link text" href = "https://github.com/lukeqanderson">GitHub</a></div>
                         </div>
                     </div>
                     <div class = "numbered-text text light">1 / 2</div>
@@ -107,8 +107,8 @@
                     <div class = "project-display">
                         <a href = "https://github.com/lukeqanderson"><img class = "project-image" src = "project2.jpg"></a>
                         <div class = "project-text text dark">
-                            <div>A sample project make with examples that will be a project soon.</div>
-                            <div>Source code: <a class = "src-code-link" href = "https://github.com/lukeqanderson">github</a></div>
+                            <div>A sample project made with examples that will be a project soon.</div>
+                            <div>Source code: <a class = "src-code-link" href = "https://github.com/lukeqanderson">GitHub</a></div>
                         </div>
                     </div>
                     <div class = "numbered-text text light">2 / 2</div>
@@ -119,13 +119,25 @@
         </div>
     </div>
      <!--div for Contact form  -->
-    <div></div>
+    <div class = "contact-container">
+        <a name = "Contact"></a>
+        <h3 id = "contact-title" class = "text dark">Contact</h3>
+        <form>
+            <label class = "fname contact-description text dark" for = "fname">First name: </label>
+            <input class = "contact-box text dark" type = "text" id = "fname" name = "fname"><br>
+            <label class = "lname contact-description text dark" for = "lname">Last name: </label>
+            <input class = "contact-box text dark" type = "text" id = "lname" name = "lname"><br>
+            <label class = "message contact-description text dark" for = "message">Message: </label><br>
+            <textarea class = "message-box contact-box text dark" type = "text" id = "message" name = "message"></textarea><br>
+            <div class = "contact-button-container"><input class = "contact-button text dark" type = "submit" value = "Submit"></div>
+        </form>
+    </div>
     <!-- div for Resume section -->
     <div></div>
     <!-- create Footer with social media links -->
     <footer class = "stickybtm">
         <!-- add fa social media icons with links-->
-        <p class = "text dark">by Luke Anderson</p>
+        <p class = "footer-text text dark">by Luke Anderson</p>
         <div class =sociallinks>
             <a href="https://github.com/lukeqanderson#" class="fa fa-github fa-lg"></a>
             <a href="https://www.linkedin.com/in/lukeqanderson/#" class="fa fa-linkedin fa-lg"></a>
