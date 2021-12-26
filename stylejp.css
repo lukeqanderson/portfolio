@@ -488,7 +488,7 @@ nav>a:active{
 .contact-button {
     font-weight: bold;
   font-size: 2.5vmin;
-  width: 12vw;
+  width: 12vmin;
   border: 2px solid #222831;
   border-radius: 15%;
   height: 8vh;
