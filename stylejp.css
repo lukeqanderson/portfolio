@@ -266,8 +266,8 @@ nav>a:active{
   }
   .skillsList {
     font-size: 1.9vmin;
-    width: 15vw;
-    height: 17vh;
+    width: 20vmin;
+    height: 20vmin;
   }
 }
 
@@ -287,8 +287,8 @@ nav>a:active{
     height: 140vh;
   }
   .skillsList {
-    width: 40vw;
-    height: 30vh;
+    width: 40vmin;
+    height: 30vmin;
   }
 }
 
@@ -339,8 +339,8 @@ nav>a:active{
 
 /* to adjust text portion of project display */
 .project-text {
-  height: 16vh;
-  width: 36vw;
+  height: 20vmin;
+  width: 40vmin;
   font-size: 2.6vmin;
   padding-right: 2vw;
   padding-left: 2vw;
@@ -398,8 +398,8 @@ nav>a:active{
 
 /* to adjust size of project images */
 .project-image {
-  height: 30vh;
-  width: 40vw;
+  height: 30vmin;
+  width: 55vmin;
 }
 
 /* to transition image on hover */
