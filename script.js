@@ -11,7 +11,7 @@ function navDropDown() {
 /* Adds responsive class condense navbar after a selection is made*/
 function navUp() {
   var topnav = document.getElementById("myTopnav");
-  if (topnav.className === "topnav sticky responsive") {
+  if (topnav.className === "topnav sticky responsive" ) {
     topnav.className = "topnav sticky";
   } else {
     topnav.className = "topnav sticky responsive";

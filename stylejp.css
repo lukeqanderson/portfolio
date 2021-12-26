@@ -34,7 +34,7 @@ Show the link that contains should open and close the topnav (.icon) */
 
 /* to style nav bar items */
 nav>a {
-  font-size: 23.2px;
+  font-size: 19px;
   font-weight: bold;
   float: left;
   display: block;
@@ -42,6 +42,11 @@ nav>a {
   padding: 1.4vmin 1.4vmin; 
   text-decoration: none;
   font-family: 'Outfit', sans-serif;
+}
+
+/* to style english not-selected tab */
+.notselected {
+    font-size: 23.2px;
 }
 
 /* adjust Japanese font on nav bar*/
@@ -65,7 +70,7 @@ nav>a {
     font-size: 26px;
   }
   .navlink {
-    font-size: 3vmin;
+    font-size: 2.7vmin;
   }
   .language.japanese {
     font-size: 2.7vmin;
@@ -211,7 +216,7 @@ nav>a:active{
 }
 
 .aboutDescription {
-  font-size: 4vmin;
+  font-size: 3.5vmin;
 }
 
 /* to format skills section */
@@ -226,13 +231,6 @@ nav>a:active{
   font-size: 8vmin;
   padding-top: 15vh;
   margin-top: 0;
-}
-
-/* to adjust the size of skills image */
-.skillsImage {
-  height: 4vmin;
-  width: 4vmin;
-  margin-left: 1vmin;
 }
 
 /* to set up grid */
@@ -267,7 +265,7 @@ nav>a:active{
     margin-left: 18vw;
   }
   .skillsList {
-    font-size: 2vmin;
+    font-size: 1.9vmin;
     width: 15vw;
     height: 17vh;
   }
@@ -308,7 +306,7 @@ nav>a:active{
   margin-bottom: 0;
   text-align: center;
   font-size: 8vmin;
-  padding-top: 8%;
+  padding-top: 9%;
   padding-bottom: 1vh;
 }
 
@@ -343,7 +341,7 @@ nav>a:active{
 .project-text {
   height: 16vh;
   width: 36vw;
-  font-size: 3vmin;
+  font-size: 2.6vmin;
   padding-right: 2vw;
   padding-left: 2vw;
   padding-top: 2vh;
@@ -452,17 +450,17 @@ nav>a:active{
 
 /* to forstmat first name description */
 .fname {
-  padding-right: 2vmin;
+  padding-right: 10.8vmin;
 }
 
 /* to format last name description*/
 .lname {
-  padding-right: 2.1vmin;
+  padding-right: 10.8vmin;
 }
 
 /* to format email area */
 .email {
-  padding-right: 8.7vmin;
+  padding-right: 4.8vmin;
 }
 
 /* to format contact input area */
@@ -488,7 +486,9 @@ nav>a:active{
 
 /* to format contact button */
 .contact-button {
-  font-size: 3vmin;
+    font-weight: bold;
+  font-size: 2.5vmin;
+  width: 12vw;
   border: 2px solid #222831;
   border-radius: 15%;
   height: 8vh;
@@ -537,7 +537,7 @@ nav>a:active{
   margin-top: 5vh;
   margin-left: 5vw;
   margin-right: 5vw;
-  font-size: 3vmin;
+  font-size: 2.4vmin;
 }
 
 /* to style footer */
@@ -554,8 +554,3 @@ footer {
   font-size: 16px;
   margin: 1vh;
 }
-
-
-
-
-
