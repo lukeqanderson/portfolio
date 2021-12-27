@@ -33,7 +33,7 @@ Show the link that contains should open and close the topnav (.icon) */
 }
 
 /* to style nav bar items */
-nav>a {
+.navlink {
   font-size: 23.2px;
   font-weight: bold;
   float: left;
@@ -44,9 +44,19 @@ nav>a {
   font-family: 'Outfit', sans-serif;
 }
 
+/* to style japanese nav bar items */
+.navjp {
+  font-size: 19.33px;
+}
+
 /* adjust Japanese font on nav bar*/
 .language.japanese {
     font-size: 19.33px;
+}
+
+/* to adjust english not selected button on japanese page */
+.notselectedjp {
+  font-size: 23.2px;
 }
 
 /* to change japanese font */
@@ -68,6 +78,9 @@ nav>a {
     font-size: 3vmin;
   }
   .language.japanese {
+    font-size: 2.7vmin;
+  }
+  .navjp {
     font-size: 2.7vmin;
   }
 }
@@ -214,6 +227,10 @@ nav>a:active{
   font-size: 4vmin;
 }
 
+.aboutDescriptionjp {
+  font-size: 3.5vmin;
+}
+
 /* to format skills section */
 .skills {
   width: 100vw;
@@ -271,6 +288,9 @@ nav>a:active{
     width: 20vmin;
     height: 20vmin;
   }
+  .skillListjp {
+    font-size: 1.9vmin;
+  }
 }
 
 /* to adjust grid to small screens */
@@ -303,13 +323,18 @@ nav>a:active{
 }
 
 /* to format projects title */
-#projectsTitle {
+.projectsTitle {
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
   font-size: 8vmin;
   padding-top: 8%;
   padding-bottom: 1vh;
+}
+
+/* to format japanese projects title for larger font */
+.projectsTitlejp {
+  padding-top: 9%;
 }
 
 
@@ -348,6 +373,11 @@ nav>a:active{
   padding-left: 2vw;
   padding-top: 2vh;
   padding-bottom: 2vh;
+}
+
+/* to adjust project text for japanese font size */
+.project-textjp {
+  font-size: 2.6vmin;
 }
 
 .numbered-text {
@@ -454,15 +484,24 @@ nav>a:active{
 .fname {
   padding-right: 2vmin;
 }
+.fnamejp {
+  padding-right: 10.8vmin;
+}
 
 /* to format last name description*/
 .lname {
   padding-right: 2.1vmin;
 }
+.lnamejp {
+  padding-right: 10.8vmin;
+}
 
 /* to format email area */
 .email {
   padding-right: 8.7vmin;
+}
+.emailjp {
+  padding-right: 4.8vmin;
 }
 
 /* to format contact input area */
@@ -493,6 +532,11 @@ nav>a:active{
   border-radius: 15%;
   height: 8vh;
   background-color: #A4E9ED;
+}
+.contact-buttonjp {
+  font-weight: bold;
+  font-size: 2.5vmin;
+  width: 12vmin;
 }
 
 /* to adjust button on hover */
@@ -538,6 +582,9 @@ nav>a:active{
   margin-left: 5vw;
   margin-right: 5vw;
   font-size: 3vmin;
+}
+.resume-textjp {
+  font-size: 2.4vmin;
 }
 
 /* to style footer */
