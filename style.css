@@ -280,41 +280,40 @@ nav>a:active{
     height: 100vh;
   }
   .skillCategories {
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    width: 64vw;
-    margin-right: 18vw;
-    margin-left: 18vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
   }
   .skillsList {
-    font-size: 2vmin;
-    width: 15vw;
-    height: 20vmin;
+    font-size: 2.5vmin;
+    width: 30vmin;
+    height: 30vmin;
   }
   .skillListjp {
-    font-size: 1.9vmin;
+    font-size: 2.3vmin;
   }
 }
 
 /* to adjust grid to small screens */
 @media screen and (max-width: 1000px) {
   #skillsTitle {
-    padding: 10vh;
+    padding: 15vmin;
     margin-bottom: 0;
   }
   .skills {
-    height: 180vh;
+    height: 220vmin;
   }
   .skillCategories {
     grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
+    align-items: center;
     width: 100vw;
-    height: 140vh;
+    height: 150vmin;
   }
   .skillsList {
-    padding-bottom: 10vh;
     width: 40vmin;
-    height: 30vmin;
+    height: 35vmin;
   }
 }
 
@@ -344,13 +343,11 @@ nav>a:active{
 
 /* to format projects container*/
 .projects-container {
-  display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-  width: 95vw;
-  height: 50vh;
-  margin-left: 2.5vw;
+  width: 100vw;
+  height: 60vh;
   padding-bottom: 20vh;
 }
 
@@ -425,11 +422,11 @@ nav>a:active{
 
 /* to adjust position for previous and next buttons */
 .prev {
-  padding-left: 16vw;
+  margin-right: 1vw;
 }
 
 .next {
-  padding-right: 16vw;
+ margin-left: 1vw;
 }
 
 /* to adjust size of project images */
@@ -534,13 +531,13 @@ nav>a:active{
   font-size: 3vmin;
   border: 2px solid #222831;
   border-radius: 15%;
-  height: 8vh;
+  height: 8vmin;
+  width: 12vmin;
   background-color: #A4E9ED;
 }
 .contact-buttonjp {
   font-weight: bold;
   font-size: 2.5vmin;
-  width: 12vmin;
 }
 
 /* to adjust button on hover */
