@@ -260,7 +260,7 @@ nav>a:active{
 /* to remove bullet points from skills lists */
 .skillsList {
   list-style: none;
-  padding-bottom: 10vh;
+  padding-bottom: 5vh;
   border: 5px solid #222831;
   border-radius: 15%;
   background-color: white;
@@ -272,6 +272,9 @@ nav>a:active{
 @media screen and (min-width: 1000px) {
   #skillsTitle {
     padding-top: 22vh;
+  }
+  .skill-container {
+    margin: 0.5vw;
   }
   .skills {
     height: 100vh;
@@ -285,7 +288,7 @@ nav>a:active{
   }
   .skillsList {
     font-size: 2vmin;
-    width: 20vmin;
+    width: 15vw;
     height: 20vmin;
   }
   .skillListjp {
@@ -309,6 +312,7 @@ nav>a:active{
     height: 140vh;
   }
   .skillsList {
+    padding-bottom: 10vh;
     width: 40vmin;
     height: 30vmin;
   }
