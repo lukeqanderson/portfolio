@@ -319,6 +319,10 @@ nav>a:active{
 
 /* sets background and size for projects section */
 .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -327,19 +331,14 @@ nav>a:active{
 
 /* to format projects title */
 .projectsTitle {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
+  justify-content: center;
+  align-items: flex-end;
   font-size: 8vmin;
-  padding-top: 8%;
-  padding-bottom: 1vh;
+  height: 25vh;
 }
-
-/* to format japanese projects title for larger font */
-.projectsTitlejp {
-  padding-top: 9%;
-}
-
 
 /* to format projects container*/
 .projects-container {
@@ -347,8 +346,7 @@ nav>a:active{
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 60vh;
-  padding-bottom: 20vh;
+  height: 70vh;
 }
 
 
