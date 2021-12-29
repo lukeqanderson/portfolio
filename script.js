@@ -1,6 +1,6 @@
 /* Adds responsive class to drop down navbar items */
-function navDropDown() {
-  var topnav = document.getElementById("myTopnav");
+const navDropDown = () => {
+  const topnav = document.getElementById("myTopnav");
   if (topnav.className === "topnav sticky") {
     topnav.className += " responsive";
   } else {
@@ -9,8 +9,8 @@ function navDropDown() {
 }
 
 /* Adds responsive class condense navbar after a selection is made*/
-function navUp() {
-  var topnav = document.getElementById("myTopnav");
+const navUp = () => {
+  const topnav = document.getElementById("myTopnav");
   if (topnav.className === "topnav sticky responsive" ) {
     topnav.className = "topnav sticky";
   } else {
@@ -18,24 +18,44 @@ function navUp() {
   }
 }
 
-// for slide show 
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
 // to display slides on click
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("projectSlide");
+const showSlides = (n) => {
+  let i;
+  const slides = document.getElementsByClassName("projectSlide");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
 }
+
+// for slide show 
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+const minusSlides = () => {
+  showSlides(slideIndex += -1);
+}
+const plusSlides = () => {
+  showSlides(slideIndex += 1);
+}
+
+// add event listeners for openining navbar dropdown
+const navIcon = document.getElementById('smallNavIcon');
+navIcon.addEventListener("click", navDropDown);
+
+// add event lisetner for closing navbar on item selection
+const navBarItems =  document.getElementsByClassName("navlink navitem");
+for (let i = 0; i < navBarItems.length; i++) {
+  console.log(navBarItems);
+  navBarItems[i].addEventListener("click", navUp);
+}
+
+// add event listener for slideshow next and previous buttons
+const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("next-button");
+
+prevButton.addEventListener("click",minusSlides);
+nextButton.addEventListener("click",plusSlides);

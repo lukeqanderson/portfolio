@@ -15,17 +15,17 @@
 <body>
    <!-- creates nav bar items -->
    <nav class = "topnav sticky" id="myTopnav">
-        <a href="javascript:void(0);" class="navlink icon" onclick="navDropDown()">
+        <a href="javascript:void(0);" id = "smallNavIcon" class="navlink icon">
             <i class="fa fa-bars"></i>
         </a>
-        <a class="navlink navitem" href="#Home" onclick="navUp()">Home</a>
-        <a class="navlink navitem" href="#About" onclick="navUp()">About</a>
-        <a class="navlink navitem" href="#Skills" onclick="navUp()">Skills</a>
-        <a class="navlink navitem" href="#Projects" onclick="navUp()">Projects</a>
-        <a class="navlink navitem" href="#Contact" onclick="navUp()">Contact</a>
-        <a class="navlink navitem" href="#Resume" onclick="navUp()">Resume</a> 
+        <a class="navlink navitem" href="#Home">Home</a>
+        <a class="navlink navitem" href="#About">About</a>
+        <a class="navlink navitem" href="#Skills">Skills</a>
+        <a class="navlink navitem" href="#Projects">Projects</a>
+        <a class="navlink navitem" href="#Contact">Contact</a>
+        <a class="navlink navitem" href="#Resume">Resume</a> 
         <a class="navlink selected language">English</a>
-        <a href="indexjp.html" class="navlink navitem notselected language japanese" onclick="navUp()">日本語</a>
+        <a href="indexjp.html" class="navlink navitem notselected language japanese">日本語</a>
    </nav>
    <!-- creates div for Home section -->
     <a name = "Home"></a>
@@ -88,7 +88,7 @@
         <a name = "Projects"></a>
         <div class = "projects-container">
             <!-- previous button -->
-            <a class="prev slideshow-button" onclick="plusSlides(-1)">&#10094;</a>
+            <a id="prev-button" class="prev slideshow-button">&#10094;</a>
             <div class = "slideshow-container">
                 <!-- project 1 -->
                 <div class = "projectSlide fade">
@@ -116,7 +116,7 @@
                 </div>
             </div>
             <!-- next button -->
-            <a class="next slideshow-button" onclick="plusSlides(1)">&#10095;</a>
+            <a id = "next-button" class="next slideshow-button">&#10095;</a>
         </div>
     </div>
      <!--div for Contact form  -->

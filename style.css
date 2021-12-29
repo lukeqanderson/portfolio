@@ -6,6 +6,7 @@ body {
 .topnav {
   background-color: #00adb5;
   overflow: hidden;
+  z-index: 1;
 }
 
 /* to make navbar sticky */

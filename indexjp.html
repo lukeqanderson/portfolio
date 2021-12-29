@@ -15,15 +15,15 @@
 <body>
     <!-- creates nav bar items -->
     <nav class = "topnav sticky" id="myTopnav">
-        <a href="javascript:void(0);" class="navlink navjp icon" onclick="navDropDown()">
+        <a href="javascript:void(0);" id="smallNavIcon" class="navlink navjp icon">
             <i class="fa fa-bars"></i>
         </a>
-        <a class="navlink navjp navitem" href="#Home" onclick="navUp()">ホームページ</a>
-        <a class="navlink navjp navitem" href="#About" onclick="navUp()">私について</a>
-        <a class="navlink navjp navitem" href="#Skills" onclick="navUp()">スキル</a>
-        <a class="navlink navjp navitem" href="#Projects" onclick="navUp()">プロジェクト</a>
-        <a class="navlink navjp navitem" href="#Contact" onclick="navUp()">コンタクト</a>
-        <a class="navlink navjp navitem" href="#Resume" onclick="navUp()">履歴書</a> 
+        <a class="navlink navjp navitem" href="#Home">ホームページ</a>
+        <a class="navlink navjp navitem" href="#About">私について</a>
+        <a class="navlink navjp navitem" href="#Skills">スキル</a>
+        <a class="navlink navjp navitem" href="#Projects">プロジェクト</a>
+        <a class="navlink navjp navitem" href="#Contact">コンタクト</a>
+        <a class="navlink navjp navitem" href="#Resume">履歴書</a> 
         <a href="index.html" class="navlink navjp navitem notselected notselectedjp language">English</a>
         <a class="navlink navjp selected language japanese">日本語</a>
     </nav>  
@@ -88,7 +88,7 @@
        <a name = "Projects"></a>
        <div class = "projects-container">
            <!-- previous button -->
-           <a class="prev slideshow-button" onclick="plusSlides(-1)">&#10094;</a>
+           <a id = "prev-button" class="prev slideshow-button">&#10094;</a>
            <div class = "slideshow-container">
                <!-- project 1 -->
                <div class = "projectSlide fade">
@@ -105,6 +105,7 @@
                <!-- project 2 -->
                <div class = "projectSlide fade">
                     <h2 class = "projectsTitle projectsTitlejp text light">プロジェクト</h2>
+
                    <div class = "project-display">
                        <a href = "https://github.com/lukeqanderson"><img class = "project-image" src = "project2.jpg"></a>
                        <div class = "project-text project-textjp text dark">
@@ -116,7 +117,7 @@
                </div>
            </div>
            <!-- next button -->
-           <a class="next slideshow-button" onclick="plusSlides(1)">&#10095;</a>
+           <a id = "next-button" class="next slideshow-button">&#10095;</a>
        </div>
    </div>
     <!--div for Contact form  -->
