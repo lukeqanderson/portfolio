@@ -1,11 +1,11 @@
 body {
-    /*to remove pre-brower margins on chrome*/
-    margin:  auto 0;
+  /*to remove pre-brower margins on chrome*/
+  margin: auto 0;
 }
 
 .topnav {
-    background-color: #00ADB5;
-    overflow: hidden;
+  background-color: #00adb5;
+  overflow: hidden;
 }
 
 /* to make navbar sticky */
@@ -25,7 +25,9 @@ body {
 /* When the screen is less than 1000 pixels wide, hide all links, except lanuage. 
 Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 1000px) {
-  .topnav .navlink {display: none;}
+  .topnav .navlink {
+    display: none;
+  }
   .topnav a.icon {
     float: left;
     display: block;
@@ -39,9 +41,9 @@ Show the link that contains should open and close the topnav (.icon) */
   float: left;
   display: block;
   text-align: center;
-  padding: 1.4vmin 1.4vmin; 
+  padding: 1.4vmin 1.4vmin;
   text-decoration: none;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 /* to style japanese nav bar items */
@@ -51,7 +53,7 @@ Show the link that contains should open and close the topnav (.icon) */
 
 /* adjust Japanese font on nav bar*/
 .language.japanese {
-    font-size: 19.33px;
+  font-size: 19.33px;
 }
 
 /* to adjust english not selected button on japanese page */
@@ -61,7 +63,7 @@ Show the link that contains should open and close the topnav (.icon) */
 
 /* to change japanese font */
 .japanese {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 /* To make the topnav verticle */
@@ -71,7 +73,7 @@ Show the link that contains should open and close the topnav (.icon) */
     display: block;
     text-align: left;
   }
-  .topnavnav.responsive a.icon { 
+  .topnavnav.responsive a.icon {
     font-size: 26px;
   }
   .navlink {
@@ -87,7 +89,7 @@ Show the link that contains should open and close the topnav (.icon) */
 
 /* to remove margin from hamburger menu icon */
 i.fa.fa-bars {
-  margin:0;
+  margin: 0;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -96,24 +98,23 @@ i.fa.fa-bars {
   display: none;
 }
 
-
 /* to style selected language */
 .selected {
-    font-weight: bold;
-    float: left;
-    display: block;
-    text-align: center;
+  font-weight: bold;
+  float: left;
+  display: block;
+  text-align: center;
 
-    text-decoration: none;
-    background-color: #222831;
-    color: white;
-    font-family: 'Outfit', sans-serif;
+  text-decoration: none;
+  background-color: #222831;
+  color: white;
+  font-family: "Outfit", sans-serif;
 }
 
 /* in order to orient language settings to the right for larger screens*/
 @media screen and (min-width: 1000px) {
   .language {
-    float:right;
+    float: right;
   }
 }
 
@@ -124,17 +125,17 @@ i.fa.fa-bars {
 
 /* for adding background to nav items */
 .navitem:hover {
-  background-color: #A4E9ED;
+  background-color: #a4e9ed;
   color: #222831;
 }
 
 /* to remove click effect from selected link */
 .selected:active {
-  color:white;
+  color: white;
 }
 
-nav>a:active{
-    color: #222831;
+nav > a:active {
+  color: #222831;
 }
 
 /* to adjust background of notselected language items */
@@ -144,25 +145,25 @@ nav>a:active{
 }
 
 .notselected:hover {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   color: #222831;
 }
 
 /* to style social media icons */
 .fa {
-    margin-right: 20%;
-    text-decoration: none;
-    color: #222831;
+  margin-right: 20%;
+  text-decoration: none;
+  color: #222831;
 }
 
 /* adds hover effect for social media icons */
 .fa:hover {
-    color: #636569;
+  color: #636569;
 }
 
 /* to change text in document */
 .text {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 /* to change dark text */
@@ -191,7 +192,6 @@ nav>a:active{
   height: 15vh;
   width: 100%;
 }
-
 
 /* to adjust headshot image */
 #headshot {
@@ -333,11 +333,10 @@ nav>a:active{
 .projectsTitle {
   display: flex;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1vh;
   justify-content: center;
   align-items: flex-end;
   font-size: 8vmin;
-  height: 25vh;
 }
 
 /* to format projects container*/
@@ -346,9 +345,8 @@ nav>a:active{
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
 }
-
 
 /* to hide slides by default */
 .projectSlide {
@@ -393,13 +391,21 @@ nav>a:active{
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* to add formatting */
@@ -424,7 +430,7 @@ nav>a:active{
 }
 
 .next {
- margin-left: 1vw;
+  margin-left: 1vw;
 }
 
 /* to adjust size of project images */
@@ -441,7 +447,7 @@ nav>a:active{
 /* to format source code link */
 .src-code-link {
   text-decoration: none;
-  color: #00ADB5;
+  color: #00adb5;
   font-weight: bold;
 }
 
@@ -531,7 +537,7 @@ nav>a:active{
   border-radius: 15%;
   height: 8vmin;
   width: 12vmin;
-  background-color: #A4E9ED;
+  background-color: #a4e9ed;
 }
 .contact-buttonjp {
   font-weight: bold;
@@ -540,7 +546,7 @@ nav>a:active{
 
 /* to adjust button on hover */
 .contact-button:hover {
-  background-color: #00ADB5;
+  background-color: #00adb5;
 }
 
 /* to format resume section */
@@ -589,7 +595,7 @@ nav>a:active{
 /* to style footer */
 footer {
   display: grid;
-  background-color: #00ADB5;
+  background-color: #00adb5;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   text-align: center;
@@ -600,8 +606,3 @@ footer {
   font-size: 16px;
   margin: 1vh;
 }
-
-
-
-
-
