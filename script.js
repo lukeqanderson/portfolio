@@ -59,3 +59,4 @@ const nextButton = document.getElementById("next-button");
 
 prevButton.addEventListener("click",minusSlides);
 nextButton.addEventListener("click",plusSlides);
+
