@@ -42,11 +42,14 @@
    <a name = "About"></a>
    <div class= "about text light">
       <h2 class = "aboutHeading">私について</h2>
-      <p class = "aboutDescriptionjp">私は元レストランマネージャーから開発者になり、実務経験があります
-          ペースの速い環境で多様なチームと。私はコンピュータサイエンスと会計の学士号を取得して卒業します
-          2023年春に東オレゴン大学から。私はアプリケーションの開発に努めています
-          ユーザー重視、すっきりとしたデザイン、直感的な機能を備えています。私のコンピューターから離れているとき、私の趣味は次のとおりです。
-        ランニング、サイクリング、釣り。</p>
+      <p class = "aboutDescriptionjp">
+        私はレストランのマネージャーから開発者に転身し、多様なチームで実務経験を積んできました。<br>
+        現在は東オレゴン大学に在籍し、コンピュータサイエンスと会計の学士号を取得後2023年春に卒業予定です。
+        <br><br>
+        すっきりとしたデザインや直感的な機能など、ユーザーを重視したアプリケーション開発に努めています。
+        <br><br> 
+        趣味はランニング、サイクリング、釣りです。
+      </p>
    </div>
    <!-- creates div for Skills section -->
    <a name = "Skills"></a>
@@ -124,15 +127,15 @@
    <div class = "contact-container">
        <a name = "Contact"></a>
        <h3 id = "contact-title" class = "text dark">コンタクト</h3>
-       <form method = "POST" class = "form">
+       <form class = "form">
            <label class = "lnamejp contact-description text dark" for = "lname">姓： </label>
-           <input class = "contact-box text dark" type = "text" id = "lname" name = "lname"><br>
+           <input class = "contact-box text dark" type = "text" id = "lname"><br>
            <label class = "fnamejp contact-description text dark" for = "fname">名： </label>
-           <input class = "contact-box text dark" type = "text" id = "fname" name = "fname"><br>
+           <input class = "contact-box text dark" type = "text" id = "fname"><br>
            <label class = "emailjp contact-description text dark" for = "email">メール： </label>
-           <input class = "contact-box text dark" type = "text" id = "email" name = "email"><br>
+           <input class = "contact-box text dark" type = "text" id = "email"><br>
            <label class = "message contact-description text dark" for = "message">メッセージ： </label><br>
-           <textarea class = "message-box contact-box text dark" type = "text" id = "message" name = "message"></textarea><br>
+           <textarea class = "message-box contact-box text dark" type = "text" id = "message"></textarea><br>
            <div class = "contact-button-container"><input class = "contact-button contact-buttonjp text dark" type = "submit" value = "送信"></div>
        </form>
    </div>
@@ -154,6 +157,7 @@
    </footer>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <!-- for smtp email ability in contact form -->
+   <script src="https://smtpjs.com/smtp.js"></script>
    <script src='script.js'></script>
 </body>
 </html>
